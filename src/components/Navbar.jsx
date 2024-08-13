@@ -16,7 +16,7 @@ const Navbar = () => {
         <a href="https://github.com/sohanfernando" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
           <FaGithub />
         </a>
-        <a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
+        <a href="https://www.facebook.com/profile.php?id=100034818584224&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
           <FaFacebook />
         </a>
         <a href="https://www.instagram.com/_sohanfernando_" target="_blank" rel="noopener noreferrer" className='cursor-pointer'>
