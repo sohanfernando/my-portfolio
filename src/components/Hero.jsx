@@ -41,6 +41,21 @@ const Hero = () => {
                 >
                     {HERO_CONTENT}
                 </motion.p>
+                <motion.button 
+                    variants={container(1.2)}
+                    initial="hidden"
+                    animate="visible"
+                    className='cursor-pointer flex justify-between bg-gray-800 px-3 py-2 my-2 rounded-full text-white
+                    tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono'
+                    onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '../assets/cvdoc/My CV.docx'
+                        link.download = 'My CV.docx';
+                        link.click();
+                    }}
+                >
+                        Download My CV
+                </motion.button>
             </div>
         </div>
         <div className='w-full lg:w-1/2 lg:p-8'>
