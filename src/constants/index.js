@@ -5,6 +5,7 @@
 import Project1 from "../assets/projects/Project1.png";
 import Project2 from "../assets/projects/Project2.png";
 import Project3 from "../assets/projects/Project3.png";
+import Project4 from "../assets/projects/Project4.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -81,6 +82,13 @@ export const PROJECTS = [
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["Next.js", "TailwindCSS", "React", "Typescript", "Node.js"],
+  },
+
+  {
+    title: "Request Management System",
+    image: Project4,
+    description: "The Request Management System is a web-based application built using the MERN stack The system supports full CRUD operations and also includes a form for adding new requests.",
+    technologies: ["MERN Stack", "Typescript", "MongoDB"],
   },
 ];
 
