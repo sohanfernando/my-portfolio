@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from "../assets/kevinRushLogo.png";
 import SF from "../assets/SF.png";
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 

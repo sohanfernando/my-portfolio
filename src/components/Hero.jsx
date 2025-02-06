@@ -1,4 +1,3 @@
-import React from 'react'
 import { HERO_CONTENT } from "../constants";
 import SohanPic from "../assets/sohanProfilePic.jpg";
 import { motion } from "framer-motion";

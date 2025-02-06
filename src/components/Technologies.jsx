@@ -1,4 +1,3 @@
-import React from 'react'
 import { SiSpringboot } from 'react-icons/si'
 import { DiJava } from 'react-icons/di'
 import { RiReactjsLine } from 'react-icons/ri'
