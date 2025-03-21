@@ -2,6 +2,7 @@
 // import project2 from "../assets/projects/project-2.jpg";
 // import project3 from "../assets/projects/project-3.jpg";
 // import project4 from "../assets/projects/project-4.jpg";
+import Project0 from "../assets/projects/Project0.png";
 import Project1 from "../assets/projects/Project1.png";
 import Project2 from "../assets/projects/Project2.png";
 import Project3 from "../assets/projects/Project3.png";
@@ -61,11 +62,11 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio Website",
-    image: Project1,
+    title: "LMS Project using MERN",
+    image: Project0,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "React", "Vite", "TailwindCSS"],
+      "A Learning Management System (LMS) built with the MERN stack enables users to create, manage, and access courses online. It includes features like user authentication, course enrollment, progress tracking, and file uploads, with MongoDB for data storage, Express.js and Node.js for the backend, and React for the frontend.",
+    technologies: ["Node", "React", "Vite", "TailwindCSS", "MongoDB"],
   },
 
   {
@@ -89,6 +90,14 @@ export const PROJECTS = [
     image: Project4,
     description: "The Request Management System is a web-based application built using the MERN stack The system supports full CRUD operations and also includes a form for adding new requests.",
     technologies: ["MERN Stack", "Typescript", "MongoDB"],
+  },
+
+  {
+    title: "Portfolio Website",
+    image: Project1,
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "React", "Vite", "TailwindCSS"],
   },
 ];
 
