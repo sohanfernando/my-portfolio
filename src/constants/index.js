@@ -15,7 +15,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EDUCATION = [
   {
     institution: "SLIIT",
-    degree: "BSc(hons) Infromation Technology",
+    degree: "BSc(hons) Information Technology",
     year: "2021 - Present",
     description: "Focused on web development, algorithms, and programming languages.",
     technologies: ["JavaScript", "React.js", "Node.js", "MySQL", "Data Structures and Algorithms"],
