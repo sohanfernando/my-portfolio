@@ -7,6 +7,7 @@ import Project1 from "../assets/projects/Project1.png";
 import Project2 from "../assets/projects/Project2.png";
 import Project3 from "../assets/projects/Project3.png";
 import Project4 from "../assets/projects/Project4.png";
+import Project5 from "../assets/projects/Project5.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Java, Node.js, MySQL and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -67,6 +68,13 @@ export const PROJECTS = [
     description:
       "A Learning Management System (LMS) built with the MERN stack enables users to create, manage, and access courses online. It includes features like user authentication, course enrollment, progress tracking, and file uploads, with MongoDB for data storage, Express.js and Node.js for the backend, and React for the frontend.",
     technologies: ["Node", "React", "Vite", "TailwindCSS", "MongoDB"],
+  },
+
+  {
+    title: "Hotel Booking Website",
+    image: Project5,
+    description: "Hotel Booking Website using MERN Stack and using Stripe for Payment Integration",
+    technologies: ["MERN Stack", "Stripe"]
   },
 
   {
