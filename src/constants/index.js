@@ -36,7 +36,7 @@ export const EXPERIENCES = [
     role: "Software Engineer Intern",
     company: "ZeroCode Software",
     description: `Contributed to the development of web applications using Java with Spring Boot. Managed databases and implemented data storage solutions using MySQL. Worked closely with Senior Software Engineers to prioritize features and enhancements.`,
-    technologies: ["Java", "Spring Boot", "MySQL", "Docker"],
+    technologies: ["Java", "Spring Boot", "MySQL", "Docker", "Version Control", "UI/UX"],
   },
 ];
 
