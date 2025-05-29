@@ -48,7 +48,7 @@ const Hero = () => {
                     tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono'
                     onClick={() => {
                         const link = document.createElement('a');
-                        link.href = 'https://drive.google.com/uc?export=download&id=1ZJxxC890uZn2-tDP5UiAcSQwrSuMfdvV'
+                        link.href = 'https://drive.google.com/file/d/1MZAIPhSzO8K-tu27cT6yRWPNKxEz_Ae6/view?usp=sharing'
                         link.download = 'My CV.pdf';
                         link.click();
                     }}
