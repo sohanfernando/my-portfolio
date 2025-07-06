@@ -16,7 +16,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EDUCATION = [
   {
     institution: "SLIIT",
-    degree: "BSc(hons) Information Technology",
+    degree: "B.Sc (Hons) Information Technology",
     year: "2021 - Present",
     description: "Focused on web development, algorithms, and programming languages.",
     technologies: ["JavaScript", "React.js", "Node.js", "MySQL", "Data Structures and Algorithms"],
@@ -36,7 +36,7 @@ export const EXPERIENCES = [
     role: "Software Engineer Intern",
     company: "ZeroCode Software",
     description: `Contributed to the development of web applications using Java with Spring Boot. Managed databases and implemented data storage solutions using MySQL. Worked closely with Senior Software Engineers to prioritize features and enhancements.`,
-    technologies: ["Java", "Spring Boot", "MySQL", "Docker", "Version Control", "UI/UX"],
+    technologies: ["Java", "Spring Boot", "Spring Security", "MySQL", "Docker", "Version Control", "UI/UX"],
   },
 ];
 
