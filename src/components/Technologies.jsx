@@ -10,59 +10,124 @@ import { BiLogoPostgresql } from 'react-icons/bi'
 import { SiDocker } from 'react-icons/si'
 import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-    initial: { y: -10 },
-    animate: {
-        y: [10, -10],
-        transition: {
-            duration: duration,
-            ease: "linear",
-            repeat: Infinity,
-            repeatType: "reverse",
-        },
-    },
-});
+const technologies = [
+  { icon: DiJava, name: 'Java', color: 'text-yellow-500', category: 'Backend' },
+  { icon: SiSpringboot, name: 'Spring Boot', color: 'text-green-400', category: 'Backend' },
+  { icon: RiReactjsLine, name: 'React', color: 'text-cyan-400', category: 'Frontend' },
+  { icon: TbBrandNextjs, name: 'Next.js', color: 'text-white', category: 'Frontend' },
+  { icon: FaNodeJs, name: 'Node.js', color: 'text-green-500', category: 'Backend' },
+  { icon: SiMysql, name: 'MySQL', color: 'text-blue-500', category: 'Database' },
+  { icon: SiMongodb, name: 'MongoDB', color: 'text-green-500', category: 'Database' },
+  { icon: BiLogoPostgresql, name: 'PostgreSQL', color: 'text-sky-700', category: 'Database' },
+  { icon: DiRedis, name: 'Redis', color: 'text-red-700', category: 'Database' },
+  { icon: SiDocker, name: 'Docker', color: 'text-sky-400', category: 'DevOps' },
+];
 
 const Technologies = () => {
   return (
-    <div id="technologies" className='border-b border-neutral-800 pb-24'>
-        <motion.h1 whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: -100 }} transition={{ duration: 1.5 }} className='my-20 text-center text-4xl'>Technologies</motion.h1>
-        <motion.div whileInView={{ opacity: 1, x: 0 }} initial={{ opacity: 0, x: -100 }} transition={{ duration: 1.5 }} className='flex flex-wrap items-center justify-center gap-4'>
-
-            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <DiJava className='text-7xl text-yellow-500' />
-            </motion.div>
-            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiSpringboot className='text-7xl text-green-400' />
-            </motion.div>
-            <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <RiReactjsLine className='text-7xl text-cyan-400' />
-            </motion.div>
-            <motion.div variants={iconVariants(5)} initial="initial" animate="animate"  className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <TbBrandNextjs className='text-7xl' />
-            </motion.div>
-            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiMysql className='text-7xl text-blue-500' />
-            </motion.div>
-            <motion.div variants={iconVariants(2)} initial="initial" animate="animate"  className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiMongodb className='text-7xl text-green-500' />
-            </motion.div>
-            <motion.div variants={iconVariants(6)} initial="initial" animate="animate"  className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <DiRedis className='text-7xl text-red-700' />
-            </motion.div>
-            <motion.div variants={iconVariants(4)} initial="initial" animate="animate"  className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <FaNodeJs className='text-7xl text-green-500' />
-            </motion.div>
-            
-            <motion.div variants={iconVariants(3)} initial="initial" animate="animate"  className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <BiLogoPostgresql className='text-7xl text-sky-700' />
-            </motion.div>
-            <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
-                <SiDocker className='text-7xl text-sky-400' />
-            </motion.div>
+    <div id="technologies" className='py-20 lg:py-32 bg-gradient-to-b from-neutral-900 to-neutral-950'>
+      <div className='container mx-auto px-6'>
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className='text-center mb-16'
+        >
+          <h2 className='text-4xl lg:text-5xl font-bold mb-4'>
+            Technologies & <span className='text-cyan-400'>Tools</span>
+          </h2>
+          <div className='w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-500 mx-auto mb-6'></div>
+          <p className='text-lg text-neutral-400 max-w-2xl mx-auto'>
+            My technology stack includes modern frameworks, databases, and tools for building scalable applications
+          </p>
         </motion.div>
+
+        {/* Technology Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8'
+        >
+          {technologies.map((tech, index) => (
+            <motion.div
+              key={tech.name}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ 
+                scale: 1.1,
+                y: -10,
+                transition: { duration: 0.3 }
+              }}
+              className='group relative'
+            >
+              {/* Card Background */}
+              <div className='relative bg-gradient-to-br from-neutral-800/50 to-neutral-900/50 p-6 rounded-2xl border border-neutral-700/50 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:border-cyan-400/50'>
+                
+                {/* Background Glow */}
+                <div className='absolute inset-0 bg-gradient-to-br from-cyan-400/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                
+                {/* Icon */}
+                <div className='relative z-10 flex flex-col items-center space-y-4'>
+                  <div className='w-16 h-16 bg-gradient-to-br from-neutral-700 to-neutral-800 rounded-xl flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-cyan-500/20 group-hover:to-purple-500/20 transition-all duration-300'>
+                    <tech.icon className={`text-4xl ${tech.color} group-hover:scale-110 transition-transform duration-300`} />
+                  </div>
+                  
+                  {/* Technology Name */}
+                  <div className='text-center'>
+                    <h3 className='text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors duration-300'>
+                      {tech.name}
+                    </h3>
+                    <p className='text-xs text-neutral-500 mt-1'>
+                      {tech.category}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Floating Elements */}
+                <motion.div
+                  animate={{ 
+                    y: [-5, 5, -5],
+                    opacity: [0.3, 0.7, 0.3]
+                  }}
+                  transition={{ 
+                    duration: 3 + index * 0.5, 
+                    repeat: Infinity, 
+                    ease: "easeInOut" 
+                  }}
+                  className='absolute -top-2 -right-2 w-3 h-3 bg-cyan-400 rounded-full opacity-0 group-hover:opacity-60'
+                ></motion.div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Additional Info */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          viewport={{ once: true }}
+          className='mt-16 text-center'
+        >
+          <div className='bg-gradient-to-r from-neutral-800/50 to-neutral-900/50 p-8 rounded-2xl border border-neutral-700/50'>
+            <h3 className='text-2xl font-bold text-white mb-4'>
+              Always Learning
+            </h3>
+            <p className='text-neutral-400 max-w-3xl mx-auto leading-relaxed'>
+              I'm constantly exploring new technologies and frameworks to stay current with industry trends. 
+              My passion for learning drives me to experiment with emerging tools and best practices.
+            </p>
+          </div>
+        </motion.div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Technologies
+export default Technologies;
