@@ -31,7 +31,6 @@ const technologies = [
   { icon: SiGit, name: 'Git', color: 'text-red-500', category: 'Version Control' },
   { icon: SiGithub, name: 'GitHub', color: 'text-white', category: 'Version Control' },
   { icon: SiDocker, name: 'Docker', color: 'text-sky-400', category: 'DevOps' },
-
 ];
 
 const Technologies = () => {
