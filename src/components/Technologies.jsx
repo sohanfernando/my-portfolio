@@ -5,22 +5,33 @@ import { TbBrandNextjs } from 'react-icons/tb'
 import { SiMongodb } from 'react-icons/si'
 import { DiRedis } from 'react-icons/di'
 import { FaNodeJs } from 'react-icons/fa'
+import { SiCplusplus } from 'react-icons/si'
 import { SiMysql } from 'react-icons/si'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import { SiDocker } from 'react-icons/si'
+import { SiTailwindcss } from 'react-icons/si'
+import { SiJavascript } from 'react-icons/si'
+import { SiGit } from 'react-icons/si'
+import { SiGithub } from 'react-icons/si'
 import { motion } from "framer-motion";
 
 const technologies = [
   { icon: DiJava, name: 'Java', color: 'text-yellow-500', category: 'Backend' },
   { icon: SiSpringboot, name: 'Spring Boot', color: 'text-green-400', category: 'Backend' },
+  { icon: SiJavascript, name: 'JavaScript', color: 'text-yellow-500', category: 'Frontend' },
+  { icon: FaNodeJs, name: 'Node.js', color: 'text-green-500', category: 'Backend' },
   { icon: RiReactjsLine, name: 'React', color: 'text-cyan-400', category: 'Frontend' },
   { icon: TbBrandNextjs, name: 'Next.js', color: 'text-white', category: 'Frontend' },
-  { icon: FaNodeJs, name: 'Node.js', color: 'text-green-500', category: 'Backend' },
+  { icon: SiTailwindcss, name: 'Tailwind CSS', color: 'text-cyan-400', category: 'Frontend' },
+  { icon: SiCplusplus, name: 'C++', color: 'text-blue-500', category: 'Backend' },
   { icon: SiMysql, name: 'MySQL', color: 'text-blue-500', category: 'Database' },
   { icon: SiMongodb, name: 'MongoDB', color: 'text-green-500', category: 'Database' },
   { icon: BiLogoPostgresql, name: 'PostgreSQL', color: 'text-sky-700', category: 'Database' },
   { icon: DiRedis, name: 'Redis', color: 'text-red-700', category: 'Database' },
+  { icon: SiGit, name: 'Git', color: 'text-red-500', category: 'Version Control' },
+  { icon: SiGithub, name: 'GitHub', color: 'text-white', category: 'Version Control' },
   { icon: SiDocker, name: 'Docker', color: 'text-sky-400', category: 'DevOps' },
+
 ];
 
 const Technologies = () => {
