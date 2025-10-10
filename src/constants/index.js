@@ -92,7 +92,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "214 Modera Street, Colombo, 01500 ",
+  address: "214 Modera Street, Colombo 15",
   phoneNo: "+94 76 797 8321 ",
   email: "sohanfernando7@gmail.com",
 };
