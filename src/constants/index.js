@@ -1,7 +1,3 @@
-// import project1 from "../assets/projects/project-1.jpg";
-// import project2 from "../assets/projects/project-2.jpg";
-// import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
 import Project0 from "../assets/projects/Project0.png";
 import Project1 from "../assets/projects/Project1.png";
 import Project2 from "../assets/projects/Project2.png";
@@ -87,30 +83,11 @@ export const PROJECTS = [
   },
 
   {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     title: "Portfolio Website",
     image: Project1,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "React", "Vite", "TailwindCSS"],
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    title: "Hotel Booking Website",
-    image: Project5,
-    description: "Hotel Booking website built with MongoDB, Express, React JS and Node JS also use Stripe payment integration.",
-    technologies: ["MERN  Stack", "Stripe"]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   },
 ];
 
