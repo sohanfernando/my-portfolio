@@ -81,16 +81,22 @@ export const PROJECTS = [
 
   {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     title: "Portfolio Website",
     image: Project1,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "React", "Vite", "TailwindCSS"],
 =======
+=======
+>>>>>>> Stashed changes
     title: "Hotel Booking Website",
     image: Project5,
     description: "Hotel Booking website built with MongoDB, Express, React JS and Node JS also use Stripe payment integration.",
     technologies: ["MERN  Stack", "Stripe"]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   },
 ];
