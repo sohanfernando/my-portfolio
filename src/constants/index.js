@@ -27,18 +27,18 @@ export const EDUCATION = [
 
 export const EXPERIENCES = [
   {
-    year: "2024 Dec - 2025 May",
-    role: "Software Engineer Intern",
-    company: "ZeroCode Software",
-    description: `Contributed to the development of web applications using Java with Spring Boot. Managed databases and implemented data storage solutions using MySQL. Worked closely with Senior Software Engineers to prioritize features and enhancements.`,
-    technologies: ["Java", "Spring Boot", "Spring Security", "MySQL", "Docker", "Version Control", "UI/UX"],
-  },
-  {
     year: "2025 Sep - Present",
     role: "Software Engineer Intern",
     company: "PRAM IT Solutions",
     description: `Contributed to the development of web applications using NextJS, React, TailwindCSS, NodeJS, TypeScript, MySQL, WordPress and Version Control.`,
     technologies: ["NextJS", "React", "TailwindCSS", "NodeJS", "TypeScript", "MySQL", "WordPress", "Version Control"],
+  },
+  {
+    year: "2024 Dec - 2025 May",
+    role: "Software Engineer Intern",
+    company: "ZeroCode Software",
+    description: `Contributed to the development of web applications using Java with Spring Boot. Managed databases and implemented data storage solutions using MySQL. Worked closely with Senior Software Engineers to prioritize features and enhancements.`,
+    technologies: ["Java", "Spring Boot", "Spring Security", "MySQL", "Docker", "Version Control", "UI/UX"],
   },
 ];
 
