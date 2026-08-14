@@ -14,11 +14,11 @@ const About = () => (
         <img
           src={portrait}
           alt="Sohan Fernando"
-          width="800"
-          height="800"
+          width="900"
+          height="1350"
           loading="lazy"
           decoding="async"
-          className="aspect-square w-full object-cover grayscale transition-all duration-700 ease-editorial hover:grayscale-0"
+          className="aspect-[2/3] w-full object-cover grayscale transition-all duration-700 ease-editorial hover:grayscale-0"
         />
       </Reveal>
 
