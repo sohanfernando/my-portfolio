@@ -1,14 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: "Inter", sans-serif;
+@layer base {
+  :root {
+    /* Dark is the default theme. Values are space-separated RGB triples so
+       Tailwind can apply opacity modifiers, e.g. text-ink/60. */
+    --canvas: 11 11 12;
+    --surface: 22 22 24;
+    --ink: 250 250 249;
+    --ink-muted: 163 163 158;
+    --ink-faint: 115 115 112;
+    --rule: 38 38 40;
+    --accent: 224 164 88;
+  }
+
+  [data-theme='light'] {
+    --canvas: 250 249 247;
+    --surface: 255 255 255;
+    --ink: 11 11 12;
+    --ink-muted: 82 82 78;
+    --ink-faint: 120 120 115;
+    --rule: 226 224 219;
+    --accent: 180 83 9;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor jumps so section headers clear the fixed navbar. */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-canvas text-ink-muted font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-accent text-canvas;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-canvas rounded-sm;
+  }
+
+  /* Instrument Serif ships italics as a separate family; keep the roman
+     upright everywhere rather than letting the browser synthesise a slant. */
+  .font-display {
+    font-synthesis: none;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

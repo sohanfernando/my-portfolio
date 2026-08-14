@@ -4,24 +4,38 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/x-icon" href="SF.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-  <style>
-    * {
-      font-family: 'Roboto Slab', serif;
-    }
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B0B0C" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#FAF9F7" media="(prefers-color-scheme: light)" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
   <meta name="clonable-verification" content="6d1db6d8a70a69c37718bdf1d32042baf1107a7c">
   <meta name="description"
     content="Portfolio of Sohan Fernando, a passionate Full Stack Developer specializing in React, Next.js, Java, Node.js, and crafting robust web applications." />
-  <meta name="keywords" content="Sohan Fernando, Portfolio, Full Stack Developer, React, Next.js, Java, Node.js, Web Development, Software Engineer" />
+  <meta name="keywords"
+    content="Sohan Fernando, Portfolio, Full Stack Developer, React, Next.js, Java, Node.js, Web Development, Software Engineer" />
   <title>Sohan Fernando</title>
+
+  <script>
+    // Stamp the theme before first paint so there is no flash of the wrong
+    // palette. Mirrors the logic in src/hooks/useTheme.js.
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var theme = stored === 'light' || stored === 'dark'
+          ? stored
+          : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
 </head>
 
 <body>

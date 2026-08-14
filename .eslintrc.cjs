@@ -13,6 +13,10 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react/jsx-no-target-blank': 'off',
+    // The shared primitives in src/components/ui take props, but the project
+    // has neither TypeScript nor the prop-types package; runtime validation
+    // isn't worth the dependency at this size.
+    'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
