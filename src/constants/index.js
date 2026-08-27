@@ -1,9 +1,13 @@
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram, FaNodeJs } from "react-icons/fa";
-import { SiSpringboot, SiMongodb, SiCplusplus, SiMysql, SiDocker, SiTailwindcss, SiJavascript, SiGit, SiGithub } from "react-icons/si";
-import { DiJava, DiRedis } from "react-icons/di";
+import {
+  SiAnthropic, SiAngular, SiBootstrap, SiC, SiCplusplus, SiCsharp, SiDart, SiDotnet,
+  SiExpress, SiFastapi, SiFlutter, SiJavascript, SiKotlin, SiMongodb, SiMui, SiMysql,
+  SiNextdotjs, SiOpenai, SiOracle, SiPostgresql, SiPython, SiSpringboot, SiTailwindcss,
+  SiTypescript, SiVuedotjs,
+} from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
 
 import Project0 from "../assets/projects/Project0.webp";
 import Project1 from "../assets/projects/Project1.webp";
@@ -47,26 +51,57 @@ export const SOCIALS = [
   { icon: FaInstagram, label: "Instagram", url: "https://www.instagram.com/_sohanfernando_" },
 ];
 
+// Mirrors the Technical Skills section of the CV. `icon` is optional — a few
+// entries have no brand icon in this version of react-icons, and the name
+// alone carries the row.
 export const TECHNOLOGIES = [
-  { icon: RiReactjsLine, name: "React", category: "Frontend" },
-  { icon: TbBrandNextjs, name: "Next.js", category: "Frontend" },
-  { icon: SiJavascript, name: "JavaScript", category: "Frontend" },
+  { icon: DiJava, name: "Java", category: "Programming Languages" },
+  { icon: SiPython, name: "Python", category: "Programming Languages" },
+  { icon: SiJavascript, name: "JavaScript", category: "Programming Languages" },
+  { icon: SiTypescript, name: "TypeScript", category: "Programming Languages" },
+  { icon: SiCsharp, name: "C#", category: "Programming Languages" },
+  { icon: SiCplusplus, name: "C++", category: "Programming Languages" },
+  { icon: SiKotlin, name: "Kotlin", category: "Programming Languages" },
+  { icon: SiDart, name: "Dart", category: "Programming Languages" },
+  { icon: SiC, name: "C", category: "Programming Languages" },
+
+  { icon: RiReactjsLine, name: "React.js", category: "Frontend" },
+  { icon: SiNextdotjs, name: "Next.js", category: "Frontend" },
+  { icon: SiAngular, name: "Angular", category: "Frontend" },
+  { icon: SiVuedotjs, name: "Vue.js", category: "Frontend" },
   { icon: SiTailwindcss, name: "Tailwind CSS", category: "Frontend" },
-  { icon: DiJava, name: "Java", category: "Backend" },
-  { icon: SiSpringboot, name: "Spring Boot", category: "Backend" },
+  { icon: SiMui, name: "Material UI", category: "Frontend" },
+  { icon: SiBootstrap, name: "Bootstrap", category: "Frontend" },
+
   { icon: FaNodeJs, name: "Node.js", category: "Backend" },
-  { icon: SiCplusplus, name: "C++", category: "Backend" },
-  { icon: SiMysql, name: "MySQL", category: "Database" },
-  { icon: SiMongodb, name: "MongoDB", category: "Database" },
-  { icon: BiLogoPostgresql, name: "PostgreSQL", category: "Database" },
-  { icon: DiRedis, name: "Redis", category: "Database" },
-  { icon: SiGit, name: "Git", category: "Tooling" },
-  { icon: SiGithub, name: "GitHub", category: "Tooling" },
-  { icon: SiDocker, name: "Docker", category: "Tooling" },
+  { icon: SiExpress, name: "Express.js", category: "Backend" },
+  { icon: SiSpringboot, name: "Spring Boot", category: "Backend" },
+  { icon: SiFastapi, name: "FastAPI", category: "Backend" },
+  { icon: SiDotnet, name: "ASP.NET Core", category: "Backend" },
+
+  { icon: SiFlutter, name: "Flutter", category: "Mobile Development" },
+  { icon: TbBrandReactNative, name: "React Native", category: "Mobile Development" },
+
+  { icon: SiMysql, name: "MySQL", category: "Databases" },
+  { icon: SiPostgresql, name: "PostgreSQL", category: "Databases" },
+  { icon: SiMongodb, name: "MongoDB", category: "Databases" },
+  { icon: SiOracle, name: "Oracle", category: "Databases" },
+
+  { icon: SiAnthropic, name: "Claude Code", category: "Tools" },
+  { name: "Antigravity", category: "Tools" },
+  { icon: SiOpenai, name: "Codex", category: "Tools" },
+  { name: "Cursor", category: "Tools" },
 ];
 
 // Order in which technology categories are rendered.
-export const TECH_CATEGORIES = ["Frontend", "Backend", "Database", "Tooling"];
+export const TECH_CATEGORIES = [
+  "Programming Languages",
+  "Frontend",
+  "Backend",
+  "Mobile Development",
+  "Databases",
+  "Tools",
+];
 
 export const EDUCATION = [
   {
@@ -87,11 +122,18 @@ export const EDUCATION = [
 
 export const EXPERIENCES = [
   {
-    year: "2025 Sep — Present",
+    year: "2026 May — 2026 Jun",
+    role: "Junior Software Engineer",
+    company: "Acendae, Netherlands (Remote)",
+    description: `Promoted to full-time Junior Software Engineer after completing the internship, taking increased ownership of feature delivery, code quality and peer code reviews across client and in-house projects.`,
+    technologies: [],
+  },
+  {
+    year: "2025 Sep — 2026 Apr",
     role: "Software Engineer Intern",
-    company: "PRAM IT Solutions",
-    description: `Contributed to the development of web applications using NextJS, React, TailwindCSS, NodeJS, TypeScript, MySQL, WordPress and Version Control.`,
-    technologies: ["NextJS", "React", "TailwindCSS", "NodeJS", "TypeScript", "MySQL", "WordPress", "Version Control"],
+    company: "Acendae, Netherlands (Remote)",
+    description: `Built and maintained full-stack web and mobile applications using Node.js, React, Next.js, Angular and Flutter over MySQL and PostgreSQL databases. Designed database schemas and handled migrations, set up Jenkins and GitHub Actions CI/CD pipelines, and worked directly with clients on requirements gathering.`,
+    technologies: ["Node.js", "React", "Next.js", "Angular", "Flutter", "MySQL", "PostgreSQL", "Jenkins", "GitHub Actions"],
   },
   {
     year: "2024 Dec — 2025 May",

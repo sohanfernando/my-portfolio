@@ -16,16 +16,21 @@ const Technologies = () => (
           <Reveal
             key={category}
             delay={index * 0.08}
-            className="grid grid-cols-1 gap-x-10 gap-y-4 border-b border-rule py-8 md:grid-cols-[10rem_1fr] md:py-10 lg:grid-cols-[14rem_1fr]"
+            className="grid grid-cols-1 gap-x-10 gap-y-4 border-b border-rule py-7 md:grid-cols-[11rem_1fr] md:py-9 lg:grid-cols-[15rem_1fr]"
           >
-            <dt className="font-mono text-label uppercase text-ink-faint md:pt-2">{category}</dt>
-            <dd className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <dt className="font-mono text-label uppercase text-ink-faint md:pt-1.5">{category}</dt>
+            <dd className="flex flex-wrap items-center gap-x-6 gap-y-3">
               {items.map(({ icon: Icon, name }) => (
                 <span
                   key={name}
-                  className="group inline-flex items-center gap-2.5 font-display text-xl text-ink transition-colors duration-300 hover:text-accent md:text-2xl"
+                  className="group inline-flex items-center gap-2 font-display text-lg text-ink transition-colors duration-300 hover:text-accent md:text-xl"
                 >
-                  <Icon aria-hidden="true" className="text-base text-ink-faint transition-colors duration-300 group-hover:text-accent" />
+                  {Icon && (
+                    <Icon
+                      aria-hidden="true"
+                      className="text-sm text-ink-faint transition-colors duration-300 group-hover:text-accent"
+                    />
+                  )}
                   {name}
                 </span>
               ))}
