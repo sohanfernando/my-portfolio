@@ -122,11 +122,18 @@ export const EDUCATION = [
 
 export const EXPERIENCES = [
   {
-    year: "2025 Sep — Present",
+    year: "2026 May — 2026 Jun",
+    role: "Junior Software Engineer",
+    company: "Acendae, Netherlands (Remote)",
+    description: `Promoted to full-time Junior Software Engineer after completing the internship, taking increased ownership of feature delivery, code quality and peer code reviews across client and in-house projects.`,
+    technologies: [],
+  },
+  {
+    year: "2025 Sep — 2026 Apr",
     role: "Software Engineer Intern",
-    company: "PRAM IT Solutions",
-    description: `Contributed to the development of web applications using NextJS, React, TailwindCSS, NodeJS, TypeScript, MySQL, WordPress and Version Control.`,
-    technologies: ["NextJS", "React", "TailwindCSS", "NodeJS", "TypeScript", "MySQL", "WordPress", "Version Control"],
+    company: "Acendae, Netherlands (Remote)",
+    description: `Built and maintained full-stack web and mobile applications using Node.js, React, Next.js, Angular and Flutter over MySQL and PostgreSQL databases. Designed database schemas and handled migrations, set up Jenkins and GitHub Actions CI/CD pipelines, and worked directly with clients on requirements gathering.`,
+    technologies: ["Node.js", "React", "Next.js", "Angular", "Flutter", "MySQL", "PostgreSQL", "Jenkins", "GitHub Actions"],
   },
   {
     year: "2024 Dec — 2025 May",
