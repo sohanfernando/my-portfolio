@@ -1,9 +1,14 @@
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram, FaNodeJs } from "react-icons/fa";
-import { SiSpringboot, SiMongodb, SiCplusplus, SiMysql, SiDocker, SiTailwindcss, SiJavascript, SiGit, SiGithub } from "react-icons/si";
-import { DiJava, DiRedis } from "react-icons/di";
+import {
+  SiAnthropic, SiAngular, SiAmazonaws, SiBootstrap, SiC, SiCplusplus, SiCsharp, SiDart,
+  SiDocker, SiDotnet, SiExpress, SiFastapi, SiFlutter, SiGit, SiGithub, SiGithubactions,
+  SiGooglecloud, SiJavascript, SiJenkins, SiJunit5, SiKotlin, SiMicrosoftazure, SiMongodb,
+  SiMui, SiMysql, SiNextdotjs, SiOpenai, SiOracle, SiPostgresql, SiPostman, SiPython,
+  SiSelenium, SiSonarqube, SiSpringboot, SiTailwindcss, SiTypescript, SiVuedotjs,
+} from "react-icons/si";
+import { DiJava } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandReactNative } from "react-icons/tb";
 
 import Project0 from "../assets/projects/Project0.webp";
 import Project1 from "../assets/projects/Project1.webp";
@@ -47,26 +52,74 @@ export const SOCIALS = [
   { icon: FaInstagram, label: "Instagram", url: "https://www.instagram.com/_sohanfernando_" },
 ];
 
+// Mirrors the Technical Skills section of the CV. `icon` is optional — a few
+// entries have no brand icon in this version of react-icons, and the name
+// alone carries the row.
 export const TECHNOLOGIES = [
-  { icon: RiReactjsLine, name: "React", category: "Frontend" },
-  { icon: TbBrandNextjs, name: "Next.js", category: "Frontend" },
-  { icon: SiJavascript, name: "JavaScript", category: "Frontend" },
+  { icon: DiJava, name: "Java", category: "Programming Languages" },
+  { icon: SiPython, name: "Python", category: "Programming Languages" },
+  { icon: SiJavascript, name: "JavaScript", category: "Programming Languages" },
+  { icon: SiTypescript, name: "TypeScript", category: "Programming Languages" },
+  { icon: SiCsharp, name: "C#", category: "Programming Languages" },
+  { icon: SiCplusplus, name: "C++", category: "Programming Languages" },
+  { icon: SiKotlin, name: "Kotlin", category: "Programming Languages" },
+  { icon: SiDart, name: "Dart", category: "Programming Languages" },
+  { icon: SiC, name: "C", category: "Programming Languages" },
+
+  { icon: RiReactjsLine, name: "React.js", category: "Frontend" },
+  { icon: SiNextdotjs, name: "Next.js", category: "Frontend" },
+  { icon: SiAngular, name: "Angular", category: "Frontend" },
+  { icon: SiVuedotjs, name: "Vue.js", category: "Frontend" },
   { icon: SiTailwindcss, name: "Tailwind CSS", category: "Frontend" },
-  { icon: DiJava, name: "Java", category: "Backend" },
-  { icon: SiSpringboot, name: "Spring Boot", category: "Backend" },
+  { icon: SiMui, name: "Material UI", category: "Frontend" },
+  { icon: SiBootstrap, name: "Bootstrap", category: "Frontend" },
+
   { icon: FaNodeJs, name: "Node.js", category: "Backend" },
-  { icon: SiCplusplus, name: "C++", category: "Backend" },
-  { icon: SiMysql, name: "MySQL", category: "Database" },
-  { icon: SiMongodb, name: "MongoDB", category: "Database" },
-  { icon: BiLogoPostgresql, name: "PostgreSQL", category: "Database" },
-  { icon: DiRedis, name: "Redis", category: "Database" },
-  { icon: SiGit, name: "Git", category: "Tooling" },
-  { icon: SiGithub, name: "GitHub", category: "Tooling" },
-  { icon: SiDocker, name: "Docker", category: "Tooling" },
+  { icon: SiExpress, name: "Express.js", category: "Backend" },
+  { icon: SiSpringboot, name: "Spring Boot", category: "Backend" },
+  { icon: SiFastapi, name: "FastAPI", category: "Backend" },
+  { icon: SiDotnet, name: "ASP.NET Core", category: "Backend" },
+
+  { icon: SiFlutter, name: "Flutter", category: "Mobile Development" },
+  { icon: TbBrandReactNative, name: "React Native", category: "Mobile Development" },
+
+  { icon: SiMysql, name: "MySQL", category: "Databases" },
+  { icon: SiPostgresql, name: "PostgreSQL", category: "Databases" },
+  { icon: SiMongodb, name: "MongoDB", category: "Databases" },
+  { icon: SiOracle, name: "Oracle", category: "Databases" },
+
+  { icon: SiGit, name: "Git", category: "DevOps" },
+  { icon: SiGithub, name: "GitHub", category: "DevOps" },
+  { icon: SiGithubactions, name: "GitHub Actions", category: "DevOps" },
+  { icon: SiJenkins, name: "Jenkins", category: "DevOps" },
+  { name: "CI/CD Pipelines", category: "DevOps" },
+  { icon: SiDocker, name: "Docker", category: "DevOps" },
+  { icon: SiAmazonaws, name: "AWS", category: "DevOps" },
+  { icon: SiGooglecloud, name: "GCP", category: "DevOps" },
+  { icon: SiMicrosoftazure, name: "Azure", category: "DevOps" },
+
+  { icon: SiJunit5, name: "JUnit", category: "Testing" },
+  { icon: SiSelenium, name: "Selenium", category: "Testing" },
+  { icon: SiSonarqube, name: "SonarQube", category: "Testing" },
+  { icon: SiPostman, name: "Postman", category: "Testing" },
+
+  { icon: SiAnthropic, name: "Claude Code", category: "Tools" },
+  { name: "Antigravity", category: "Tools" },
+  { icon: SiOpenai, name: "Codex", category: "Tools" },
+  { name: "Cursor", category: "Tools" },
 ];
 
 // Order in which technology categories are rendered.
-export const TECH_CATEGORIES = ["Frontend", "Backend", "Database", "Tooling"];
+export const TECH_CATEGORIES = [
+  "Programming Languages",
+  "Frontend",
+  "Backend",
+  "Mobile Development",
+  "Databases",
+  "DevOps",
+  "Testing",
+  "Tools",
+];
 
 export const EDUCATION = [
   {
