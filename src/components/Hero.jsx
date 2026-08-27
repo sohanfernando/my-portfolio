@@ -58,7 +58,7 @@ const Hero = () => (
         variants={fade(0.65)}
         initial="hidden"
         animate="visible"
-        className="mt-12 max-w-prose text-lead text-ink-muted"
+        className="mt-12 max-w-prose font-display text-lead text-ink-muted"
       >
         {HERO_CONTENT}
       </motion.p>

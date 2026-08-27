@@ -32,7 +32,7 @@ const Projects = () => (
                 )}
               </div>
 
-              <p className="mt-4 max-w-prose text-lead text-ink-muted">{project.description}</p>
+              <p className="mt-4 max-w-prose font-display text-lead text-ink-muted">{project.description}</p>
 
               <ul className="mt-6 flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (

@@ -24,7 +24,7 @@ const About = () => (
 
       <div className="md:col-span-3">
         <Reveal delay={0.1}>
-          <p className="max-w-prose text-lead text-ink-muted">{ABOUT_TEXT}</p>
+          <p className="max-w-prose font-display text-lead text-ink-muted">{ABOUT_TEXT}</p>
         </Reveal>
 
         <Reveal delay={0.2}>

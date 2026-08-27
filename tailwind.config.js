@@ -35,7 +35,7 @@ export default {
         // Mono labels: small, uppercase, generously tracked.
         label: ['0.6875rem', { lineHeight: '1.4', letterSpacing: '0.14em' }],
         'label-lg': ['0.8125rem', { lineHeight: '1.4', letterSpacing: '0.1em' }],
-        lead: ['1.0625rem', { lineHeight: '1.7' }],
+        lead: ['1.25rem', { lineHeight: '1.7' }],
       },
       maxWidth: {
         content: '68rem',

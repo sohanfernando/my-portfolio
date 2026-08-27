@@ -18,7 +18,7 @@ import Project4 from "../assets/projects/Project4.webp";
 export const PROFILE = {
   firstName: "Sohan",
   lastName: "Fernando",
-  role: "Full Stack Developer",
+  role: "Software Engineer",
   location: "Colombo, Sri Lanka",
   availability: "Available for work",
   resumeUrl: "https://drive.google.com/file/d/1MZAIPhSzO8K-tu27cT6yRWPNKxEz_Ae6/view?usp=sharing",
@@ -27,7 +27,7 @@ export const PROFILE = {
 
 export const HERO_CONTENT = `I build robust, scalable web applications end to end — React and Next.js on the front, Java, Node.js, MySQL and MongoDB behind them. Two years of hands-on experience turning ideas into software that ships.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I build full-stack web and mobile applications end to end — Node.js, React, Next.js and Angular on top of REST APIs and relational databases, alongside Java and Spring Boot on the backend. I hold a BSc (Hons) in Information Technology from SLIIT, and currently work with a Netherlands-based team, taking ownership of feature delivery, code quality and peer reviews across client and in-house projects. I'm curious and collaborative, and I like picking up new frameworks and tools as I go. Outside of coding, I enjoy staying active and contributing to open-source projects.`;
 
 export const ABOUT_STATS = [
   { value: "2+", label: "Years experience" },
@@ -107,8 +107,8 @@ export const EDUCATION = [
   {
     institution: "SLIIT",
     degree: "B.Sc (Hons) Information Technology",
-    year: "2021 — Present",
-    description: "Focused on web development, algorithms, and programming languages.",
+    year: "2021 — 2026",
+    description: "Focused on programming languages, algorithms, web development and AI.",
     technologies: ["JavaScript", "React.js", "Node.js", "MySQL", "Data Structures and Algorithms"],
   },
   {
