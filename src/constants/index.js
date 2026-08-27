@@ -30,8 +30,7 @@ export const HERO_CONTENT = `I build robust, scalable web applications end to en
 export const ABOUT_TEXT = `I build full-stack web and mobile applications end to end — Node.js, React, Next.js and Angular on top of REST APIs and relational databases, alongside Java and Spring Boot on the backend. I hold a BSc (Hons) in Information Technology from SLIIT, and currently work with a Netherlands-based team, taking ownership of feature delivery, code quality and peer reviews across client and in-house projects. I'm curious and collaborative, and I like picking up new frameworks and tools as I go. Outside of coding, I enjoy staying active and contributing to open-source projects.`;
 
 export const ABOUT_STATS = [
-  { value: "2+", label: "Years experience" },
-  { value: "5", label: "Projects shipped" },
+  { value: "1+", label: "Years experience" },
   { value: "Colombo", label: "Based in" },
 ];
 
