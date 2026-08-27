@@ -1,10 +1,9 @@
 import { FaFacebook, FaLinkedin, FaGithub, FaInstagram, FaNodeJs } from "react-icons/fa";
 import {
-  SiAnthropic, SiAngular, SiAmazonaws, SiBootstrap, SiC, SiCplusplus, SiCsharp, SiDart,
-  SiDocker, SiDotnet, SiExpress, SiFastapi, SiFlutter, SiGit, SiGithub, SiGithubactions,
-  SiGooglecloud, SiJavascript, SiJenkins, SiJunit5, SiKotlin, SiMicrosoftazure, SiMongodb,
-  SiMui, SiMysql, SiNextdotjs, SiOpenai, SiOracle, SiPostgresql, SiPostman, SiPython,
-  SiSelenium, SiSonarqube, SiSpringboot, SiTailwindcss, SiTypescript, SiVuedotjs,
+  SiAnthropic, SiAngular, SiBootstrap, SiC, SiCplusplus, SiCsharp, SiDart, SiDotnet,
+  SiExpress, SiFastapi, SiFlutter, SiJavascript, SiKotlin, SiMongodb, SiMui, SiMysql,
+  SiNextdotjs, SiOpenai, SiOracle, SiPostgresql, SiPython, SiSpringboot, SiTailwindcss,
+  SiTypescript, SiVuedotjs,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
@@ -88,21 +87,6 @@ export const TECHNOLOGIES = [
   { icon: SiMongodb, name: "MongoDB", category: "Databases" },
   { icon: SiOracle, name: "Oracle", category: "Databases" },
 
-  { icon: SiGit, name: "Git", category: "DevOps" },
-  { icon: SiGithub, name: "GitHub", category: "DevOps" },
-  { icon: SiGithubactions, name: "GitHub Actions", category: "DevOps" },
-  { icon: SiJenkins, name: "Jenkins", category: "DevOps" },
-  { name: "CI/CD Pipelines", category: "DevOps" },
-  { icon: SiDocker, name: "Docker", category: "DevOps" },
-  { icon: SiAmazonaws, name: "AWS", category: "DevOps" },
-  { icon: SiGooglecloud, name: "GCP", category: "DevOps" },
-  { icon: SiMicrosoftazure, name: "Azure", category: "DevOps" },
-
-  { icon: SiJunit5, name: "JUnit", category: "Testing" },
-  { icon: SiSelenium, name: "Selenium", category: "Testing" },
-  { icon: SiSonarqube, name: "SonarQube", category: "Testing" },
-  { icon: SiPostman, name: "Postman", category: "Testing" },
-
   { icon: SiAnthropic, name: "Claude Code", category: "Tools" },
   { name: "Antigravity", category: "Tools" },
   { icon: SiOpenai, name: "Codex", category: "Tools" },
@@ -116,8 +100,6 @@ export const TECH_CATEGORIES = [
   "Backend",
   "Mobile Development",
   "Databases",
-  "DevOps",
-  "Testing",
   "Tools",
 ];
 
